@@ -1,0 +1,31 @@
+<div class="navbar nav-1">
+  Tecnología con enfoque humano
+</div>
+<nav [ngClass]="{'alto-init': (scroll==0), 'alto-medium': (scroll > 5 && scroll < 10), 'alto-final': (scroll > 15)}" class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="padding-left: 150px; padding-right: 250px;">
+  <a class="navbar-brand" routerLink="/home/inicio" style="display: flex; justify-content: center;">
+    <img [ngClass]="{'width-50': (scroll >= 0 && scroll < 100), 'width-30': (scroll>=100)}" src="https://img1.wsimg.com/isteam/ip/7d8cb06e-77ee-4350-a2ba-435fc8551b3f/logo_transparent_background.png/:/rs=h:150/qt=q:95" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto" style="font-size: 18px;">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home/inicio">Inicio</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home/acerca-de">Acerca de</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home/nuestra-oferta">Nuestra oferta</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home/blog">Blog</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home/contacto">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>

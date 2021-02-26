@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  background-image: url('https://www.lifeder.com/wp-content/uploads/2017/06/participantes-mesa-redonda.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 79%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  & .contenido{
+    width: 500px;
+    color: white;
+    font-weight: bold;
+    & .title{
+      font-size: 45px;
+    }
+    & .texto{
+      background-color: rgba(22, 22, 22, 0.5);
+      font-size: 20px;
+    }
+  }
+}

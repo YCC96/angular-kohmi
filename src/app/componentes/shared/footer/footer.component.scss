@@ -1,0 +1,23 @@
+@import '../../../../variables';
+
+.nv-1{
+  width: 100%;
+  background-color: $colorRed;
+}
+
+.nv-2{
+  width: 100%;
+  //height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  & .container {
+    color: darkgray;
+    font-size: 18px;
+  }
+}
+
+.ionicon{
+  fill: white;
+  width: 50px;
+}

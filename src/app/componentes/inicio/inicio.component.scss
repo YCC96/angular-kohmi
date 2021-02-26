@@ -1,0 +1,50 @@
+.centar-texto {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  //width: 560px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & .contenido{
+    width: 400px;
+  }
+  & p{
+    font-weight: bold;
+  }
+}
+
+.img-1 {
+  background-image: url("//img1.wsimg.com/isteam/stock/6yOme1a/:/rs=w:560,h:320,cg:true,m/cr=w:560,h:320,ax:50%25,ay:50%25");
+}
+
+.img-2 {
+  background-image: url("//img1.wsimg.com/isteam/stock/10795/:/rs=w:560,h:320,cg:true,m/cr=w:560,h:320,a:cc");
+}
+
+.img-3 {
+  background-image: url("//img1.wsimg.com/isteam/stock/k8bZdQ2/:/cr=t:16.52%25,l:0%25,w:54.85%25,h:54.85%25/rs=w:560,h:320,cg:true,m/cr=w:560,h:320,ax:50%25,ay:50%25/fx-gs");
+}
+
+.img-4 {
+  background-image: url("//img1.wsimg.com/isteam/stock/yrY8e9w/:/rs=w:560,h:320,cg:true,m/cr=w:560,h:320,a:cc");
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+  .direccion {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
